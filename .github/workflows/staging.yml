@@ -1,0 +1,15 @@
+name: staging
+
+jobs:
+  print-job:
+    name: Print Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Step
+        env:
+          MY_VAR: Hi there! My name is
+          FIRST_NAME: AAA
+          MIDDLE_NAME: BBB
+          LAST_NAME: CCC
+        run: |
+          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
