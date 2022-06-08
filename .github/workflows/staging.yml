@@ -1,6 +1,6 @@
 name: staging
 
-on: [watch]
+on: [push]
 
 jobs:
   print-job:
